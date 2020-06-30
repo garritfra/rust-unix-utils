@@ -11,3 +11,7 @@ edition = "2018"
 [[bin]]
 name = "rat"
 path = "src/cat.rs"
+
+[[bin]]
+name = "rls"
+path = "src/ls.rs"
