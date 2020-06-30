@@ -1,12 +1,11 @@
 use std::env;
 use std::fs::File;
-use std::io::Write;
 use std::io::{self, Read};
 
 fn main() -> io::Result<()> {
     let args: Vec<String> = env::args().collect();
 
-    if args.len() >= 1 {
+    if !args.is_empty() {
         return concat_files(args);
     }
 
